@@ -9,7 +9,7 @@ namespace FindAndReadConsoleApp
         {
             Console.WriteLine("Введите имя файла");
             var fileName = Console.ReadLine();
-            Console.WriteLine("Введите корневую папку");
+            Console.WriteLine(@"Введите корневую (пример ввода: C:\Program Files\Microsoft Visual Studio 10.0 )");
             var rootFolder = Console.ReadLine();
             var filePath = rootFolder + fileName;
             if (Directory.Exists(rootFolder))
